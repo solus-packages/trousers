@@ -1,0 +1,2 @@
+z /etc/tcsd.conf 0600 tss tss -
+Z /var/lib/tpm 0700 tss tss -

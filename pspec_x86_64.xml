@@ -1,0 +1,55 @@
+<PISI>
+    <Source>
+        <Name>trousers</Name>
+        <Packager>
+            <Name>Matthias Eliasson</Name>
+            <Email>matthias.eliasson@gmail.com</Email>
+        </Packager>
+        <License>CPL-1.0</License>
+        <PartOf>programming.library</PartOf>
+        <Summary xml:lang="en">The open-source TCG Software Stack</Summary>
+        <Description xml:lang="en">The open-source TCG Software Stack
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>trousers</Name>
+        <Summary xml:lang="en">The open-source TCG Software Stack</Summary>
+        <Description xml:lang="en">The open-source TCG Software Stack
+</Description>
+        <PartOf>programming.library</PartOf>
+        <Files>
+            <Path fileType="config">/etc/tcsd.conf</Path>
+            <Path fileType="library">/usr/lib64/lib*.so.*</Path>
+            <Path fileType="library">/usr/lib64/systemd/system/tcsd.service</Path>
+            <Path fileType="library">/usr/lib64/sysusers.d/trousers.conf</Path>
+            <Path fileType="library">/usr/lib64/tmpfiles.d/trousers.conf</Path>
+            <Path fileType="executable">/usr/sbin</Path>
+            <Path fileType="man">/usr/share/man</Path>
+            <Path fileType="data">/var/lib/tpm</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>trousers-devel</Name>
+        <Summary xml:lang="en">Development files for trousers</Summary>
+        <Description xml:lang="en">The open-source TCG Software Stack
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">trousers</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/</Path>
+            <Path fileType="library">/usr/lib64/lib*.so</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2017-12-19</Date>
+            <Version>0.3.14</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Matthias Eliasson</Name>
+            <Email>matthias.eliasson@gmail.com</Email>
+        </Update>
+    </History>
+</PISI>
